@@ -11,6 +11,22 @@ export function Hero() {
       <div className="absolute inset-0 grain opacity-60" aria-hidden />
       <div className="container relative grid min-h-[calc(100vh-3.5rem)] grid-cols-1 items-center gap-12 !pt-0 pb-0 md:grid-cols-[1.2fr_1fr]">
         <div>
+          <div
+            className="float-right ml-3 mt-1 w-28 opacity-0 animate-fade-in sm:w-36 md:hidden"
+            style={{ animationDelay: "300ms" }}
+            aria-hidden
+          >
+            <div className="relative aspect-[4/5] w-full">
+              <Image
+                src="/portrait.png"
+                alt=""
+                fill
+                sizes="(max-width: 640px) 112px, 144px"
+                priority
+                className="object-contain object-bottom"
+              />
+            </div>
+          </div>
           <p
             className="mb-4 font-mono text-sm text-muted-foreground opacity-0 animate-fade-in-up"
             style={{ animationDelay: "60ms" }}
@@ -69,7 +85,7 @@ export function Hero() {
         </div>
 
         <div
-          className="relative mx-auto w-full max-w-[520px] self-end opacity-0 animate-fade-in md:mx-0 md:ml-auto md:-mt-16 lg:max-w-[600px] lg:-mt-24"
+          className="relative mx-auto hidden w-full max-w-[520px] self-end opacity-0 animate-fade-in md:block md:mx-0 md:ml-auto md:-mt-16 lg:max-w-[600px] lg:-mt-24"
           style={{ animationDelay: "300ms" }}
         >
           <div
