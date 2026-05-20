@@ -9,7 +9,7 @@ export function SiteFooter() {
         </p>
         <div className="flex items-center gap-4 text-muted-foreground">
           <a
-            href="https://github.com/your-handle"
+            href="https://github.com/pilipinEgul"
             aria-label="GitHub"
             className="transition-colors hover:text-foreground"
           >

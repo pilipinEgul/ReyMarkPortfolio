@@ -4,7 +4,7 @@ import { projects } from "@/content/site";
 
 export function Projects() {
   return (
-    <Section id="projects" eyebrow="03." title="Selected projects">
+    <Section id="projects" title="Selected projects">
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <article

@@ -3,11 +3,11 @@ export const site = {
   name: "Rey Mark",
   role: "Software Developer",
   location: "Earth",
-  email: "you@example.com",
+  email: "markr7636@gmail.com",
   bio:
     "I build web apps end-to-end from React UIs to the APIs and infrastructure behind them. I care about fast feedback loops, well-named code, and shipping things people actually use.",
   socials: {
-    github: "https://github.com/your-handle",
+    github: "https://github.com/pilipinEgul",
     linkedin: "https://linkedin.com/in/your-handle",
     twitter: "https://twitter.com/your-handle",
   },
@@ -16,19 +16,19 @@ export const site = {
 export const skills: Array<{ group: string; items: string[] }> = [
   {
     group: "Languages",
-    items: ["TypeScript", "JavaScript", "Python", "Go", "SQL"],
+    items: ["TypeScript", "JavaScript", "Python", "PHP", "SQL", "C#", "Java"],
   },
   {
     group: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "Zustand", "TanStack Query"],
+    items: ["React", "Next.js", "Tailwind CSS", "Bootstrap CSS"],
   },
   {
     group: "Backend",
-    items: ["Node.js", "Express", "FastAPI", "tRPC", "GraphQL"],
+    items: ["Node.js", "Laravel", "REST API", "MySQL", "SQLite"],
   },
   {
     group: "Infra & Tools",
-    items: ["Postgres", "Redis", "Docker", "AWS", "GitHub Actions"],
+    items: ["GitHub Actions"],
   },
 ];
 
@@ -87,26 +87,26 @@ export type ExperienceItem = {
 };
 
 export const experience: ExperienceItem[] = [
+  // {
+  //   company: "Acme Corp",
+  //   role: "Senior Software Engineer",
+  //   period: "2023 — Present",
+  //   description:
+  //     "Lead developer on the billing platform. Migrated a monolith to a service-oriented architecture, cutting median request latency by 60%.",
+  //   href: "https://acme.example",
+  // },
+  // {
+  //   company: "Globex",
+  //   role: "Software Engineer",
+  //   period: "2020 — 2023",
+  //   description:
+  //     "Built the customer-facing dashboard from scratch in Next.js. Owned the design system and the auth/session layer.",
+  // },
   {
-    company: "Acme Corp",
-    role: "Senior Software Engineer",
-    period: "2023 — Present",
+    company: "Chiu Kim Group Of Campanies",
+    role: "Software Developer",
+    period: "2025 — Present",
     description:
-      "Lead developer on the billing platform. Migrated a monolith to a service-oriented architecture, cutting median request latency by 60%.",
-    href: "https://acme.example",
-  },
-  {
-    company: "Globex",
-    role: "Software Engineer",
-    period: "2020 — 2023",
-    description:
-      "Built the customer-facing dashboard from scratch in Next.js. Owned the design system and the auth/session layer.",
-  },
-  {
-    company: "Initech",
-    role: "Junior Developer",
-    period: "2018 — 2020",
-    description:
-      "First job out of school. Worked across the stack on internal tools — Rails on the back, jQuery on the front (yes, really).",
+      "My first role in the IT industry. Built websites with Laravel and Next.js, ran cross-database data migrations via custom scripts (and chased down the data issues that surfaced along the way), automated processes with n8n workflows, built a JavaFX desktop system backed by Hibernate, and authored reports with JasperSoft.",
   },
 ];

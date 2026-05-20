@@ -9,13 +9,18 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Rey Mark — Software Developer",
+  title: "Rey Mark - Software Developer",
   description:
-    "Personal portfolio of Your Name. Projects, experience, and ways to get in touch.",
+    "Personal portfolio of Rey Mark. Projects, experience, and ways to get in touch.",
   metadataBase: new URL("https://example.com"),
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
-    title: "Your Name — Software Developer",
-    description: "Personal portfolio of Your Name.",
+    title: "Rey Mark - Software Developer",
+    description: "Personal portfolio of Rey Mark.",
     type: "website",
   },
 };

@@ -3,7 +3,7 @@ import { skills } from "@/content/site";
 
 export function Skills() {
   return (
-    <Section id="skills" eyebrow="02." title="Skills">
+    <Section id="skills" title="Skills">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((group) => (
           <div
