@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60">
       <div className="container flex flex-col items-center justify-between gap-4 py-8 md:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Your Name. Built with Next.js & Tailwind.
+          © {new Date().getFullYear()} Rey Mark. Built with Next.js & Tailwind.
         </p>
         <div className="flex items-center gap-4 text-muted-foreground">
           <a

@@ -5,8 +5,13 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
+type ViewTransition = {
+  ready: Promise<void>;
+  finished: Promise<void>;
+  updateCallbackDone: Promise<void>;
+};
 type DocumentWithVT = Document & {
-  startViewTransition?: (cb: () => void) => { ready: Promise<void> };
+  startViewTransition?: (cb: () => void) => ViewTransition;
 };
 
 export function ThemeToggle() {
@@ -41,22 +46,35 @@ export function ThemeToggle() {
     root.style.setProperty("--vt-y", `${y}px`);
     root.style.setProperty("--vt-r", `${endRadius}px`);
 
-    const transition = doc.startViewTransition(() => setTheme(nextTheme));
-    transition.ready.then(() => {
-      document.documentElement.animate(
-        {
-          clipPath: [
-            `circle(0px at ${x}px ${y}px)`,
-            `circle(${endRadius}px at ${x}px ${y}px)`,
-          ],
-        },
-        {
-          duration: 500,
-          easing: "ease-in-out",
-          pseudoElement: "::view-transition-new(root)",
-        },
-      );
-    });
+    try {
+      const transition = doc.startViewTransition(() => setTheme(nextTheme));
+
+      transition.ready
+        .then(() => {
+          document.documentElement.animate(
+            {
+              clipPath: [
+                `circle(0px at ${x}px ${y}px)`,
+                `circle(${endRadius}px at ${x}px ${y}px)`,
+              ],
+            },
+            {
+              duration: 500,
+              easing: "ease-in-out",
+              pseudoElement: "::view-transition-new(root)",
+            },
+          );
+        })
+        .catch(() => {
+          /* transition aborted (e.g. rapid toggle) — theme is already applied */
+        });
+
+      transition.finished.catch(() => {
+        /* swallow abort errors from interrupted transitions */
+      });
+    } catch {
+      setTheme(nextTheme);
+    }
   }, [isDark, setTheme]);
 
   return (

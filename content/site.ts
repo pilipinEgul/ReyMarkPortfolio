@@ -1,10 +1,11 @@
+
 export const site = {
-  name: "Your Name",
+  name: "Rey Mark",
   role: "Software Developer",
   location: "Earth",
   email: "you@example.com",
   bio:
-    "I build web apps end-to-end — from React UIs to the APIs and infrastructure behind them. I care about fast feedback loops, well-named code, and shipping things people actually use.",
+    "I build web apps end-to-end from React UIs to the APIs and infrastructure behind them. I care about fast feedback loops, well-named code, and shipping things people actually use.",
   socials: {
     github: "https://github.com/your-handle",
     linkedin: "https://linkedin.com/in/your-handle",

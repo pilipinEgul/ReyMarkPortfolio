@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Your Name — Software Developer",
+  title: "Rey Mark — Software Developer",
   description:
     "Personal portfolio of Your Name. Projects, experience, and ways to get in touch.",
   metadataBase: new URL("https://example.com"),

@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-border/60">
       <div className="absolute inset-0 grain opacity-60" aria-hidden />
-      <div className="container relative grid min-h-[calc(100vh-3.5rem)] grid-cols-1 items-center gap-12 pt-16 pb-0 md:grid-cols-[1.2fr_1fr]">
+      <div className="container relative grid min-h-[calc(100vh-3.5rem)] grid-cols-1 items-center gap-12 !pt-0 pb-0 md:grid-cols-[1.2fr_1fr]">
         <div>
           <p
             className="mb-4 font-mono text-sm text-muted-foreground opacity-0 animate-fade-in-up"

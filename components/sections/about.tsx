@@ -2,19 +2,20 @@ import { Section } from "@/components/section";
 
 export function About() {
   return (
-    <Section id="about" eyebrow="01." title="About">
+    <Section id="about" title="About">
       <div className="grid gap-10 md:grid-cols-3">
         <div className="md:col-span-2 space-y-4 text-base leading-relaxed text-muted-foreground">
           <p>
-            I&apos;m a software developer who enjoys the whole stack — but my
-            sweet spot is the seam between a well-designed UI and the system
-            that powers it. I learned to code by breaking other people&apos;s
-            projects and putting them back together.
+            I&apos;m a software developer who enjoys the whole stack, but my
+            sweet spot is the backend the backbone of the system. I learned
+            to code by breaking other people&apos;s projects and putting them
+            back together.
           </p>
           <p>
-            Lately I&apos;ve been spending time on developer tools, realtime
-            collaboration, and ways to make the web feel less laggy and more
-            handmade. I write semi-regularly about whatever I&apos;m stuck on.
+            What I do best is debugging and thinking logically. Hand me a
+            misbehaving system and I&apos;ll trace it line by line until I
+            find exactly where the logic broke that&apos;s the part of the
+            job I genuinely enjoy.
           </p>
           <p>
             Outside of work I read more than I should and run less than I

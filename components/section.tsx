@@ -17,9 +17,12 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn("scroll-mt-20 border-b border-border/60 py-20", className)}
+      className={cn(
+        "flex min-h-[calc(100vh-3.5rem)] scroll-mt-14 flex-col justify-center border-b border-border/60 py-20",
+        className,
+      )}
     >
-      <div className="container">
+      <div className="container w-full">
         {(eyebrow || title) && (
           <Reveal>
             <div className="mb-10 flex items-baseline gap-3">
